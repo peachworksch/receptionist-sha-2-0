@@ -137,3 +137,21 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# --- project specific ---
+.env
+.env.*
+/dist
+/build
+coverage/
+.DS_Store
+# Cloud Run / GCP junk that may appear locally
+*.log
+.gcloud/
+# editors
+.vscode/
+.idea/
+# lockfiles (keep ONE; comment out if you track it)
+# yarn.lock
+# package-lock.json
+# pnpm-lock.yaml
