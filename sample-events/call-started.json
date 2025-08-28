@@ -1,0 +1,10 @@
+{
+  "event": "call.started",
+  "call": {
+    "call_id": "test-call-123",
+    "agent_id": "agent-456",
+    "from_number": "+15551234567",
+    "to_number": "+18005551234",
+    "start_timestamp": 1703123456789
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "event": "tool.call",
+  "call": {
+    "call_id": "test-call-123"
+  },
+  "tool_call": {
+    "tool_call_id": "book-1",
+    "tool_name": "book_calendar",
+    "arguments": {
+      "name": "John Smith",
+      "phone": "(555) 123-4567",
+      "address": "123 Main St, Woodland, CA 95695",
+      "issue": "Air conditioner not cooling properly",
+      "startISO": "2024-01-15T10:00:00-08:00",
+      "endISO": "2024-01-15T12:00:00-08:00"
+    }
+  }
+}

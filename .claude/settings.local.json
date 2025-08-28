@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod:*)",
+      "Bash(npm install)",
+      "Bash(npm run dev:*)",
+      "Bash(gcloud builds submit:*)",
+      "Bash(echo \"\n# Step 4: Deploy to Cloud Run\n# Replace the placeholder values with your actual API keys and secrets\n\nSERVICE=ai-receptionist\nIMAGE_URL=us-west1-docker.pkg.dev/receptionist-sha-2-0/ai-receptionist/web:20250827-041844\n\ngcloud run deploy $SERVICE \\\n  --image $IMAGE_URL \\\n  --region us-west1 \\\n  --platform managed \\\n  --allow-unauthenticated \\\n  --min-instances 1 \\\n  --cpu 1 --memory 512Mi \\\n  --set-env-vars PORT=8080 \\\n  --set-env-vars RETELL_SIGNING_SECRET=''YOUR_RETELL_SECRET'' \\\n  --set-env-vars GEMINI_API_KEY=''YOUR_GEMINI_KEY'' \\\n  --set-env-vars GOOGLE_CLIENT_ID=''YOUR_GOOGLE_CLIENT_ID'' \\\n  --set-env-vars GOOGLE_CLIENT_SECRET=''YOUR_GOOGLE_CLIENT_SECRET'' \\\n  --set-env-vars GOOGLE_REFRESH_TOKEN=''YOUR_GOOGLE_REFRESH_TOKEN''\n\")",
+      "Bash(gcloud config set:*)",
+      "Bash(gcloud logs tail:*)",
+      "Bash(gcloud logging read:*)",
+      "Bash(curl:*)",
+      "Bash(gcloud run services update-traffic:*)",
+      "Bash(gcloud run services list:*)",
+      "Bash(gcloud run services describe:*)",
+      "Bash(export REGION=us-west1)",
+      "Bash(export SERVICE=ai-receptionist)",
+      "Bash(export RETELL_SIGNING_SECRET='key_9ac1b08ffb4c98cd697987a49805')",
+      "Bash(export TWILIO_PHONE='+16266215864')",
+      "Bash(export TWILIO_TRUNK_FRIENDLY='retell-trunk')",
+      "Bash(echo \"REGION=$REGION\")",
+      "Bash(echo \"SERVICE=$SERVICE\")",
+      "Bash(echo:*)",
+      "Bash(# Step 1: Create/merge robust .gitignore with safeguards\nGITIGNORE_BLOCK=$(cat <<''EOF''\n# Node & build\nnode_modules/\ndist/\nbuild/\n.tmp/\n.temp/\n.coverage/\ncoverage/\n.nyc_output/\n\n# Env & credentials\n.env\n.env.*\n!.env.example\n\n# OS/IDE\n.DS_Store\n*.log\n*.pid\n.vscode/\n.idea/\n*.swp\n\n# Misc caches\n.pnpm-store/\n.next/\n.vercel/\nturbo/\n.cache/\nEOF\n)\n\n# Create .gitignore if missing\n[ -f .gitignore ] || touch .gitignore\n# Append only the lines that aren''t present yet\necho \"\"$GITIGNORE_BLOCK\"\" | while IFS= read -r line; do\n  [ -z \"\"$line\"\" ] && continue\n  grep -qxF \"\"$line\"\" .gitignore || echo \"\"$line\"\" >> .gitignore\ndone\n\necho \"\"✅ .gitignore updated with safeguards\"\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

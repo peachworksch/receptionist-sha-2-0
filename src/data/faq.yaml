@@ -1,0 +1,44 @@
+- q: "Do you service water heaters?"
+  a: "Yes, we service both tank and tankless water heater systems within 25 miles of Woodland."
+
+- q: "What are your hours?"
+  a: "We're open Monday through Saturday, 9am to 5pm."
+
+- q: "Do you offer emergency service?"
+  a: "Not at this time. We provide next-day appointment booking during our regular hours, 9am to 5pm."
+
+- q: "What areas do you serve?"
+  a: "We serve Woodland and surrounding areas within a 25-mile radius."
+
+- q: "Do you install new HVAC systems?"
+  a: "Yes, we install and replace heating, cooling, and ventilation systems for residential and commercial properties."
+
+- q: "Do you offer financing?"
+  a: "Yes, we offer financing options for larger installations and repairs. Ask about our payment plans during your appointment."
+
+- q: "What brands do you work on?"
+  a: "We service all major HVAC brands including Carrier, Trane, Lennox, Rheem, Goodman, and many others."
+
+- q: "Do you provide estimates?"
+  a: "Yes, we provide free estimates for all installations and major repairs during your service visit."
+
+- q: "How long does a typical service call take?"
+  a: "Most service appointments take 2 hours, though complex issues may require additional time."
+
+- q: "Do you clean air ducts?"
+  a: "Yes, we provide complete ductwork cleaning and inspection services."
+
+- q: "What payment methods do you accept?"
+  a: "We accept cash, check, and all major credit cards."
+
+- q: "Are you licensed and insured?"
+  a: "Yes, we are fully licensed, bonded, and insured for your protection."
+
+- q: "Do you maintain heat pumps?"
+  a: "Yes, we service and maintain all types of heat pump systems."
+
+- q: "Can you help with high energy bills?"
+  a: "Absolutely! We can perform energy efficiency evaluations and recommend improvements to reduce your utility costs."
+
+- q: "Do you replace thermostats?"
+  a: "Yes, we install and replace all types of thermostats, including programmable and smart thermostats."

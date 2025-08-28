@@ -1,0 +1,14 @@
+{
+  "event": "tool.call",
+  "call": {
+    "call_id": "test-call-123"
+  },
+  "tool_call": {
+    "tool_call_id": "propose-1",
+    "tool_name": "propose_slot",
+    "arguments": {
+      "date": "2024-01-15",
+      "durationMins": 120
+    }
+  }
+}

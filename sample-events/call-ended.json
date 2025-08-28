@@ -1,0 +1,7 @@
+{
+  "event": "call.ended",
+  "call": {
+    "call_id": "test-call-123",
+    "end_timestamp": 1703123756789
+  }
+}
