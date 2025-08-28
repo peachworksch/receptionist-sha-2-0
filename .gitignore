@@ -155,3 +155,33 @@ coverage/
 # yarn.lock
 # package-lock.json
 # pnpm-lock.yaml
+
+# Node & build
+node_modules/
+dist/
+build/
+.tmp/
+.temp/
+.coverage/
+coverage/
+.nyc_output/
+
+# Env & credentials
+.env
+.env.*
+!.env.example
+
+# OS/IDE
+.DS_Store
+*.log
+*.pid
+.vscode/
+.idea/
+*.swp
+
+# Misc caches
+.pnpm-store/
+.next/
+.vercel/
+turbo/
+.cache/
